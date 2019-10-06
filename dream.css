@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px 2px;
+    margin-bottom: 2px;
+    background-color:orangered;
+    color: white;
+}
+
+.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color:lightgrey;
+}
+body{
+    font-family: 'Lato', sans-serif; 
+}
+h1, h2 {
+    margin: 15px 0;
+}
+
+body > h1 {
+    text-align: center;
+}
+
+div#list {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+div#list > div {
+    border: 1px solid orange;
+    padding: 15px;
+}
+
+div.button_holder{
+    display: flex;
+    flex-direction: column;
+}
+#list > div {
+    flex-basis: 250px
+}
+h2 + ol {
+    margin-top: 25px;
+    list-style-type: none;
+}
+ol > li {
+
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.orangeColor {
+    background-color:orangered;
+    border: 1px solid white;
+}
